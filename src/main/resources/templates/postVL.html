@@ -1,0 +1,35 @@
+@layout("/common/layout.html",{requiredEditor:true}){
+<form action="${ctxPath}/bbs/topic/saveVL" method="post" id="post-form" onsubmit="return ajaxSubmit(this)">
+	<fieldset>
+		<legend>发布最新版本更新日志</legend>
+        <p>上一版本&nbsp;->&nbsp;&nbsp;&nbsp;${TLOneVLName}</p>
+		<div class="form-group">
+			<div class="row">
+				<div class="col-sm-8">
+					<input type="text" class="form-control " name="vlName" placeholder="VER-LOG-NAME"><br>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+            <input type="text" class="form-control " name="vl1" placeholder="LOG-NO.1"><br>
+            <input type="text" class="form-control " name="vl2" placeholder="LOG-NO.2"><br>
+            <input type="text" class="form-control " name="vl3" placeholder="LOG-NO.3"><br>
+            <input type="text" class="form-control " name="vl4" placeholder="LOG-NO.4"><br>
+            <input type="text" class="form-control " name="vl5" placeholder="LOG-NO.5"><br>
+            <input type="text" class="form-control " name="vl6" placeholder="LOG-NO.6"><br>
+            <input type="text" class="form-control " name="vl7" placeholder="LOG-NO.7"><br>
+            <input type="text" class="form-control " name="vl8" placeholder="LOG-NO.8"><br>
+            <input type="text" class="form-control " name="vl9" placeholder="LOG-NO.9"><br>
+            <input type="text" class="form-control " name="vl10" placeholder="LOG-NO.10"><br>
+            <input type="text" class="form-control " name="vl11" placeholder="LOG-NO.11"><br>
+            <input type="text" class="form-control " name="vl12" placeholder="LOG-NO.12"><br>
+            <input type="text" class="form-control " name="vl13" placeholder="LOG-NO.13"><br>
+            <input type="text" class="form-control " name="vl14" placeholder="LOG-NO.14"><br>
+            <input type="text" class="form-control " name="vl15" placeholder="LOG-NO.15"><br>
+		</div>
+		<div class="btn-group pull-right">
+			<button class="btn btn-sm btn-primary submit-btn" title="Send" type="submit"><i class="fa fa-check"></i> 提交</button>
+		</div>
+	</fieldset>
+</form>
+ @}
